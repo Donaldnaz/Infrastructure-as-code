@@ -1,9 +1,10 @@
-# AWS EC2 Instance Deployment using Terraform*
+# AWS EC2 Instance Deployment using Terraform
 
 This repository contains Terraform configuration files for deploying an AWS EC2 instance with a secure and automated setup.
 The goal is to showcase how to use Infrastructure as Code (IaC) to provision cloud resources quickly, consistently, and with minimal manual work.
 
-# The project provisions:
+# The project provisions
+
 An EC2 instance (t3.micro)
 A Security Group with SSH and HTTP access
 Automatic tagging - resource tracking

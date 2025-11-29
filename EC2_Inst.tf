@@ -1,6 +1,6 @@
 # EC2 Instance
 
-resource "aws_instance" "example" {
+resource "aws_instance" "ikenna_IAC" {
   ami                    = data.aws_ami.ikenna.id
   instance_type          = "t3.micro"
   key_name               = "ikenna"

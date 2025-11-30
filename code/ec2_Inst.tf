@@ -12,3 +12,8 @@ resource "aws_instance" "ikenna" {
     Project = "IAC"
   }
 }
+
+resource "aws_ec2_instance_state" "web" {
+  instance_id = aws_instance.web.id
+  state       = "stopped"
+}

@@ -13,7 +13,7 @@ resource "aws_instance" "ikenna" {
   }
 }
 
-resource "aws_ec2_instance_state" "iac" {
+resource "aws_ec2_instance_state" "iac_state" {
   instance_id = aws_instance.ikenna.id
   state       = "stopped"
 }

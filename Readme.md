@@ -1,5 +1,4 @@
-# IAM Roles and Bindings for Terraform Deployments
-
+# IAM Roles for Deployments
 This Terraform module manages **custom IAM roles** and **role bindings** required for deploying GCP infrastructure. It grants appropriate permissions to service accounts for use with Cloud Run, Cloud Functions, GKE, VPC, Vertex AI, and other key GCP services.
 
 ## Resources Created

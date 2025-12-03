@@ -10,11 +10,11 @@ apt install -y wget unzip apache2
 systemctl enable apache2
 systemctl start apache2
 
-# Download the template
+# Download HTML
 TEMPLATE_URL="https://templatemo.com/tm-zip-files-2020/templatemo_589_lugx_gaming.zip"
 TEMPLATE_FILE="templatemo_589_lugx_gaming.zip"
 
-echo "Downloading template..."
+echo "Downloading..."
 
 if wget --header="User-Agent: Mozilla/5.0" "$TEMPLATE_URL" -O "$TEMPLATE_FILE"; then
     unzip -o "$TEMPLATE_FILE"
@@ -22,6 +22,6 @@ if wget --header="User-Agent: Mozilla/5.0" "$TEMPLATE_URL" -O "$TEMPLATE_FILE"; 
     systemctl restart apache2
     echo "Website deployed!"
 else
-    echo "Failed to download template."
+    echo "Failed to download."
     exit 1
 fi

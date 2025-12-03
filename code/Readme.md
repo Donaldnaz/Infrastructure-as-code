@@ -1,4 +1,3 @@
-## `README.md`: Deploy HTML Website to EC2 with Terraform
 # Deploy Static HTML Website to AWS EC2 with Terraform
 This project uses **Terraform** to provision an EC2 instance on **AWS**, install **Apache**, and deploy a static HTML.
 
@@ -7,16 +6,6 @@ Provisions an EC2 instance in your selected region
 Installs Apache automatically via user data  
 Downloads and extracts an HTML template  
 Serves the website via public IP
-
-## Folder Structure
-
-├── main.tf               # EC2 instance & provisioning logic
-├── variables.tf          # Input variables (region, AMI, etc.)
-├── outputs.tf            # Public IP output
-├── security.tf           # Security group config
-├── web.sh                # Script to execute HTML
-├── README.md             # You are here
-
 
 ## Requirements
 - [Terraform CLI](https://developer.hashicorp.com/terraform/install)

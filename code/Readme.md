@@ -9,6 +9,7 @@ Downloads and extracts an HTML template
 Serves the website via public IP
 
 ## Folder Structure
+
 ├── main.tf               # EC2 instance & provisioning logic
 ├── variables.tf          # Input variables (region, AMI, etc.)
 ├── outputs.tf            # Public IP output
@@ -22,7 +23,6 @@ Serves the website via public IP
 - AWS account
 - IAM credentials (with EC2 permissions)
 
-
 ## How to Deploy
 1. **Clone this repo**
 2. **Initialize Terraform**
@@ -30,6 +30,3 @@ Serves the website via public IP
 4. **Apply and deploy**
 5. **Output**
 6. **Visit your website**
-
-Let me know and I’ll generate that next!
-```

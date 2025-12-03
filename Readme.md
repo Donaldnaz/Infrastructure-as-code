@@ -1,4 +1,4 @@
-# GCP VPC Networking
+# VPC Networking
 This module provisions a **custom VPC network** on Google Cloud Platform with optional **subnets**, a **Cloud Router**, and **dynamic firewall rules**.
 
 # Resources Created

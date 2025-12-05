@@ -1,7 +1,6 @@
 # Terraform GCP VPC and Compute Environment
 
 This project provisions a small but complete Google Cloud environment using Terraform.  
-It is designed as a portfolio friendly example that shows you understand how to:
 
 * Configure the Google provider
 * Create a custom VPC network
@@ -10,9 +9,7 @@ It is designed as a portfolio friendly example that shows you understand how to:
 * Create a Cloud Storage bucket for static content
 * Use explicit dependencies and a local exec provisioner
 
-
 ## Architecture overview
-
 This Terraform configuration creates the following resources in Google Cloud:
 
 * **VPC network** named `terraform-network`
@@ -32,7 +29,6 @@ This Terraform configuration creates the following resources in Google Cloud:
   * Created only after the storage bucket exists using `depends_on`
 
 ## Prerequisites
-
 Before you run this project, you need:
 
 * A Google Cloud project  

@@ -31,20 +31,6 @@ This Terraform configuration creates the following resources in Google Cloud:
   * Attached to the same VPC network
   * Created only after the storage bucket exists using `depends_on`
 
-
-## Why this is useful
-
-This project shows that you can:
-
-* Work with Infrastructure as Code using Terraform
-* Understand the basics of Google Cloud networking and compute
-* Pin provider versions for reproducible deployments
-* Model dependencies between resources
-* Use provisioners for simple automation and diagnostics
-
-The configuration is intentionally small and easy to read so a reviewer can scan it quickly and still see good practices.
-
-
 ## Prerequisites
 
 Before you run this project, you need:

@@ -18,7 +18,7 @@ The following resources are created by this module:
 
 - Custom VPC with explicitly defined subnets
 - Firewall rules for secure and dynamic traffic control
-- Cloud Router for dynamic BGP support (e.g., for VPNs or hybrid connectivity)
+- Cloud Router for dynamic BGP support
 - Ready to support **GKE subnet** configuration (predefined but disabled)
 - Designed for modular reuse across environments
 

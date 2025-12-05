@@ -31,7 +31,7 @@ The following resources are created by this module:
 - Proper IAM roles (e.g., `Network Admin`, `Compute Admin`)
 
 
-## 🔐 Security Best Practices
+## Security Best Practices
 
 * Restrict firewall rules by IP ranges (e.g., use your IP instead of `0.0.0.0/0`)
 * Separate subnets for public-facing and internal resources

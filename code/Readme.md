@@ -16,7 +16,6 @@ This project provisions an **Amazon EC2 instance** using **Terraform**, installs
 ## Project Structure
 
 ```
-.
 ├── ec2_inst.tf        # Terraform configuration for AWS resources
 ├── vars.tf            # Input variable definitions
 ├── backend.tf         # Centra repo to store state file
@@ -32,13 +31,13 @@ This project provisions an **Amazon EC2 instance** using **Terraform**, installs
 
 Ensure the following tools and settings are in place:
 
-| Requirement     | Description                                                                 |
+| Requirement     | Description                                                                |
 |----------------|-----------------------------------------------------------------------------|
 | Terraform CLI   | [Install Terraform](https://developer.hashicorp.com/terraform/install)     |
 | AWS CLI         | [Install AWS CLI](https://aws.amazon.com/cli/) & run `aws configure`       |
 | AWS Account     | IAM user with sufficient EC2 and VPC permissions                           |
 | SSH Key Pair    | Used to SSH into the instance and for Terraform remote access              |
-| Zipped Website  | A valid `html.zip` file with `index.html` at the root (optional to replace)|
+| HTML Website    | A valid `html` file with `index.html` at the root                          |
 
 ---
 

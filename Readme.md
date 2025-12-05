@@ -26,7 +26,7 @@ This module creates the following resources:
 
 ---
 
-## 📌 Requirements
+## Requirements
 
 | Name | Version |
 |------|---------|

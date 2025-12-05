@@ -18,11 +18,10 @@ This Terraform project provisions the following AWS resources:
 
 Before you begin, ensure the following tools are installed:
 
-- [Terraform](https://developer.hashicorp.com/terraform/downloads) (v1.3+)
+- [Terraform](https://developer.hashicorp.com/terraform/downloads)
 - [AWS CLI](https://aws.amazon.com/cli/)
 - AWS credentials configured in your environment (e.g. via `aws configure`)
 
----
 
 ## Implementation Step
 
@@ -63,4 +62,6 @@ terraform apply
 ```
 
 
+
+Author
 **Anasieze Ikenna – Cloud Engineer**

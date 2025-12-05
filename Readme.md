@@ -28,7 +28,7 @@ Before you begin, ensure the following tools are installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/aws-ec2-terraform.git
+git clone https://github.com/donaldnaz/aws-ec2-terraform.git
 cd aws-ec2-terraform
 ````
 

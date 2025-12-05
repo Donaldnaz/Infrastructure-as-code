@@ -118,7 +118,6 @@ Terraform will:
 
 After the apply completes, look for the file `ip_address.txt` in your local directory. It contains the instance name and public IP address of the primary instance, written by the `local exec` provisioner.
 
----
 
 ## Cleaning up
 
@@ -137,7 +136,6 @@ This will remove:
 * Both compute instances
 * The storage bucket
 
----
 
 ## Author
 

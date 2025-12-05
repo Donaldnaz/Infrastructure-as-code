@@ -8,7 +8,7 @@ This Terraform project provisions the following AWS resources:
 
 | Resource Type         | Description                                                                |
 |----------------------|-----------------------------------------------------------------------------|
-| **EC2 Instance**      | A lightweight `t3.micro` Amazon Linux 2 instance.                          |
+| **EC2 Instance**      | A lightweight `t3.micro` Ubuntu instance.                                  |
 | **Security Group**    | Allows inbound traffic on ports **22 (SSH)** and **80 (HTTP)**.            |
 | **Key Pair**          | Custom key pair generated for secure SSH access to the instance.           |
 | **Tags**              | Automatic tagging for environment and resource identification.             |

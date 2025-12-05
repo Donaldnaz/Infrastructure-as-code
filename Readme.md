@@ -28,7 +28,7 @@ The following resources are created by this module:
 
 - [Terraform](https://developer.hashicorp.com/terraform/install) v1.3 or higher
 - Google Cloud project with billing enabled
-- Proper IAM roles (e.g., `Network Admin`, `Compute Admin`)
+- Proper IAM roles
 
 
 ## Security Best Practices

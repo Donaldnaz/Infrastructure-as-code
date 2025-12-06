@@ -60,6 +60,94 @@ At a high level the architecture looks like this:
 
 ```
 
+## Prerequisites
+
+To run this project you will need:
+
+* A Google Cloud project with billing enabled
+* `gcloud` CLI installed and authenticated
+* `terraform` CLI installed
+* Basic familiarity with:
+
+  * Kubernetes concepts: pods, deployments, services
+  * Terraform commands: `init`, `plan`, `apply`
+
+## Setup
+
+<img width="1440" height="634" alt="Screenshot 2025-12-06 at 1 32 30 PM" src="https://github.com/user-attachments/assets/ee3ae509-9398-4864-961a-167c40f14ee9" />
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/<your-username>/<your-repo-name>.git
+   cd <your-repo-name>
+   ```
+
+2. **Set your Google Cloud project and region**
+
+   Update `vars.tf` section in your `*.tf` files with values such as:
+
+   ```hcl
+   project_id = "your-gcp-project-id"
+   region     = "us-central1"
+   zone       = "us-central1-a"
+   ```
+
+3. **Authenticate with Google Cloud**
+
+   ```bash
+   gcloud auth application-default login
+   gcloud config set project your-gcp-project-id
+   ```
+
+## Deploying the Infrastructure
+
+1. **Initialize Terraform**
+
+   ```bash
+   terraform init
+   ```
+
+2. **Review the execution plan**
+
+   ```bash
+   terraform plan
+   ```
+
+3. **Apply the configuration**
+
+   ```bash
+   terraform apply
+   ```
+
+## Verifying the Deployment
+
+1. **Get Kubernetes credentials for `kubectl`**
+
+   ```bash
+   gcloud container clusters get-credentials <cluster-name> --zone <cluster-zone> --project <project-id>
+   ```
+
+2. **Check pods and services**
+
+   ```bash
+   kubectl get pods
+   kubectl get svc
+   ```
+
+   Note the **external IP** assigned to the Service of type LoadBalancer.
+   
+<img width="1440" height="476" alt="Screenshot 2025-12-06 at 1 05 15 PM" src="https://github.com/user-attachments/assets/de9de856-d30c-426a-9e40-194617acdcef" />
+
+
+4. **Test the NGINX endpoint**
+
+   ```bash
+   curl http://<external-ip>
+   ```
+   
+<img width="1440" height="433" alt="Screenshot 2025-12-06 at 1 06 37 PM" src="https://github.com/user-attachments/assets/dbaf4147-100d-420d-a171-57cc6c1b2f8b" />
+
 
 ## Author
 # Anasieze Ikenna - Cloud Engineer

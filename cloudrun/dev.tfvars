@@ -1,4 +1,5 @@
-# General Configuration
+# General Configurations
+
 name           = "audio-trigger-fn"
 env            = "dev"
 gcp_project_id = "your-gcp-project-id"

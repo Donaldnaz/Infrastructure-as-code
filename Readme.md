@@ -26,7 +26,6 @@ In this branch & repository, I:
 - Expose the application externally through a Service of type LoadBalancer  
 - Validate that traffic is being routed correctly to the pods
 
----
 
 ## Architecture
 
@@ -46,7 +45,6 @@ At a high level the architecture looks like this:
   - Google provider to create the GKE cluster and required IAM or networking
   - Kubernetes provider to create the Deployment and Service inside the cluster
 
----
 
 ## Repository Structure
 
@@ -151,4 +149,4 @@ To run this project you will need:
 
 
 ## Author
-# Anasieze Ikenna - Cloud Engineer
+## Anasieze Ikenna - Cloud Engineer

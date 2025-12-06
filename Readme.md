@@ -91,14 +91,7 @@ To run this project you will need:
    region     = "us-central1"
    zone       = "us-central1-a"
    ```
-
-3. **Authenticate with Google Cloud**
-
-   ```bash
-   gcloud auth application-default login
-   gcloud config set project your-gcp-project-id
-   ```
-
+   
 ## Deploying the Infrastructure
 
 1. **Initialize Terraform**

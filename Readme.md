@@ -54,6 +54,7 @@ At a high level the architecture looks like this:
 .
 ├── main.tf          # GCP resources such as the GKE cluster
 ├── k8s.tf           # Kubernetes resources such as Deployment and Service
+├── output.tf        # Infrastructure Output details
 ├── versions.tf      # Terraform and provider version constraints
 ├── vars.tf          # Variable values for project, region, cluster settings
 └── README.md        # This file

@@ -1,3 +1,5 @@
+# GCP resources such as the GKE cluster
+
 provider "google" {
   region = var.region
 }

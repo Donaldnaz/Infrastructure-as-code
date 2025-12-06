@@ -1,3 +1,5 @@
+# Infrastructure Variables
+
 variable "region" {
   type        = string
   description = "Region for the resource."

@@ -38,8 +38,6 @@ Traffic flow:
 
 ## Repository Structure
 
-Adapt this section to match your files if they are named differently:
-
 ```text
 .
 ├── main.tf              # Core Terraform configuration and resources

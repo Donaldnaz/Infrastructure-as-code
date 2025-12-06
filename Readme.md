@@ -120,7 +120,10 @@ To run this project you will need:
    gcloud container clusters get-credentials <cluster-name> --zone <cluster-zone> --project <project-id>
    ```
 
-2. **Check pods and services**
+<img width="1440" height="725" alt="Screenshot 2025-12-06 at 1 02 18 PM" src="https://github.com/user-attachments/assets/b30d4ddf-ff0f-4371-9d6e-3b9cff94c81b" />
+
+
+3. **Check pods and services**
 
    ```bash
    kubectl get pods

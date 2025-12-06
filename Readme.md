@@ -16,10 +16,6 @@ Instead of creating the cluster with the console and deploying workloads with `k
 - NGINX deployment  
 - Load balancer service exposure  
 
-This is a great example of how to manage cloud infrastructure and Kubernetes resources in one place.
-
----
-
 ## Objectives
 
 In this branch & repository, I:
@@ -59,7 +55,7 @@ At a high level the architecture looks like this:
 ├── main.tf          # GCP resources such as the GKE cluster
 ├── k8s.tf           # Kubernetes resources such as Deployment and Service
 ├── versions.tf      # Terraform and provider version constraints
-├── terraform.tfvars # Variable values for project, region, cluster settings
+├── vars.tf          # Variable values for project, region, cluster settings
 └── README.md        # This file
 
 ```

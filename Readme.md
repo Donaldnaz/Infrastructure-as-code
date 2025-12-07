@@ -21,6 +21,7 @@ At a high level, the Terraform code provisions:
 <img width="1400" height="739" alt="image" src="https://github.com/user-attachments/assets/131cbbb8-dd83-43de-8cb5-2a080f0cad9a" />
 
 
+
 * A global external HTTPS load balancer  
 * A URL map that defines routing rules  
 * Backend buckets that point to one or more Cloud Storage buckets  

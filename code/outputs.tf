@@ -9,7 +9,7 @@ output "instance_address" {
 }
 
 output "instance_address_time_to_retire" {
-  description = "The time the master instance IP address will be retired. RFC 3339 format."
+  description = "The time the master instance IP address will be retired"
   value       = google_sql_database_instance.master.ip_address.0.time_to_retire
 }
 
@@ -19,7 +19,7 @@ output "self_link" {
 }
 
 output "generated_user_password" {
-  description = "The auto generated default user password if no input password was provided"
+  description = "The auto generated default user password"
   value       = random_id.user-password.hex
   sensitive   = true
 }

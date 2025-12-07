@@ -46,7 +46,6 @@ Connectivity pattern:
 3. The proxy opens a local TCP port.
 4. The MySQL or PostgreSQL client connects to that local port, and the proxy securely forwards traffic to Cloud SQL.
    
----
 
 ## Repository Structure
 
@@ -61,8 +60,6 @@ Adapt this section to your actual files, but a typical structure looks like:
 └── README.md       # Project documentation
 ````
 
----
-
 ## Prerequisites
 
 You will need:
@@ -73,7 +70,6 @@ You will need:
 * Google Cloud SDK if working from your own machine
 * Basic familiarity with SQL and the MySQL or PostgreSQL client
 
----
 
 ## Deploy with Terraform
 
@@ -113,8 +109,6 @@ You will need:
    * `db_public_ip`
    * `db_name`
    * `db_user`
-
----
 
 ## Connect with Cloud SQL Auth Proxy
 

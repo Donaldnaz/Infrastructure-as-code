@@ -18,7 +18,7 @@ Using Terraform, this project:
 
 At a high level, the Terraform code provisions:
 
-<img width="1511" height="739" alt="image" src="https://github.com/user-attachments/assets/131cbbb8-dd83-43de-8cb5-2a080f0cad9a" />
+<img width="1400" height="739" alt="image" src="https://github.com/user-attachments/assets/131cbbb8-dd83-43de-8cb5-2a080f0cad9a" />
 
 
 * A global external HTTPS load balancer  
@@ -65,14 +65,14 @@ Traffic flow:
    terraform plan -out=tfplan
    ```
    
-<img width="1344" height="356" alt="Screenshot 2025-12-07 at 1 21 11 PM" src="https://github.com/user-attachments/assets/3672aaa2-b9a2-49ae-ae00-52cc88eebf2a" />
+<img width="1200" height="356" alt="Screenshot 2025-12-07 at 1 21 11 PM" src="https://github.com/user-attachments/assets/3672aaa2-b9a2-49ae-ae00-52cc88eebf2a" />
 
 3. **Apply the configuration**
 
    ```bash
    terraform apply tfplan
    ```
-<img width="1440" height="729" alt="Screenshot 2025-12-07 at 1 22 24 PM" src="https://github.com/user-attachments/assets/38915d2d-d69d-427b-a27a-691d5e513ffd" />
+<img width="14" height="729" alt="Screenshot 2025-12-07 at 1 22 24 PM" src="https://github.com/user-attachments/assets/38915d2d-d69d-427b-a27a-691d5e513ffd" />
 
 4. **Verify the deployment**
 

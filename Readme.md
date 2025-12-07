@@ -1,4 +1,4 @@
-# HTTPS Content Based Load Balancer with Terraform
+# HTTPS Content Based Load Balancer
 
 This repository contains Terraform configuration that builds a global HTTPS content based load balancer on Google Cloud Platform.  
 

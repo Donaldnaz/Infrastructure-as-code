@@ -21,7 +21,6 @@ According to the official lab description, you practice the following tasks: :co
 * Install the Cloud SQL Auth Proxy in Cloud Shell
 * Test connectivity with a MySQL client
   
----
 
 ## Architecture
 

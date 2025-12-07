@@ -34,15 +34,22 @@ Traffic flow:
 3. The URL map selects a backend based on host or path rules  
 4. Static content is returned from the Cloud Storage bucket closest to the user  
 
----
 
 ## Repository Structure
 
 ```text
 .
-├── main.tf              # Core Terraform configuration and resources
-├── variables.tf         # Input variables such as project and region
-├── outputs.tf           # Useful outputs such as load balancer IP or URL
-├── versions.tf          # Terraform and provider version constraints
-├── terraform.tfvars     # Local values for your environment (git ignored)
-└── README.md            # Project documentation
+├── script.sh.tpl     # Template for the VM startup script
+├── gcp-logo.svg      # Google Cloud logo used in app UI
+├── main.tf           # Core Terraform configuration and resource definitions
+├── mig.tf            # Managed instance group and related backend resources
+├── outputs.tf        # Terraform output values such as external IP or URLs
+├── README.md         # Project documentation (this file)
+├── versions          # Provider versions
+├── tls.tf            # TLS provider resources and HTTPS certificate setup
+└── variables.tf      # Input variables
+
+```
+
+## Anasieze Ikenna - Cloud Engineer
+

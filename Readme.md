@@ -76,16 +76,10 @@ Traffic flow:
 
 4. **Verify the deployment**
 
-   After apply completes, check the outputs:
-
    ```bash
-   terraform output
+   terraform show
    ```
 
-   ```bash
-   echo "https://$(terraform output -raw lb_ip)"
-   ```
-   
 <img width="1440" height="641" alt="Screenshot 2025-12-07 at 1 30 50 PM" src="https://github.com/user-attachments/assets/542c8ebe-702a-48d5-91dd-61ade4969f62" />
 
 ---

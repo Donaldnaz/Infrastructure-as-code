@@ -1,13 +1,13 @@
 # Cloud SQL with Terraform
 
-This repository contains Terraform configuration and helper scripts.
+This repository contains Terraform configuration to provision **Cloud SQL**
 
 ## Overview
 
 The project demonstrates how to:
 
 * Define Cloud SQL infrastructure using Terraform
-* Provision Cloud SQL instances for MySQL and optionally PostgreSQL
+* Provision Cloud SQL instances for MySQL
 * Install and run the Cloud SQL Auth Proxy from Cloud Shell
 * Connect to the database securely using standard command line clients
 * Manage database users and simple test schemas
@@ -24,7 +24,7 @@ The project demonstrates how to:
 
 At a high level, the configuration provisions:
 
-<img width="600" height="278" alt="image" src="https://github.com/user-attachments/assets/d8f95623-2dea-472e-9ce2-6ab6303e7e56" />
+<img width="695" height="371" alt="Screenshot 2025-12-07 at 6 47 57 PM" src="https://github.com/user-attachments/assets/7446ccdc-6577-40e5-8bf5-7d2ad8599f9a" />
 
 
 * Cloud SQL instance
@@ -41,19 +41,16 @@ Connectivity pattern:
 1. Terraform creates the Cloud SQL instance and database.
 2. You start the Cloud SQL Auth Proxy in Cloud Shell, using the instance connection name.
 3. The proxy opens a local TCP port.
-4. The MySQL or PostgreSQL client connects to that local port, and the proxy securely forwards traffic to Cloud SQL.
-   
+4. The MySQL client connects to that local port, and the proxy securely forwards traffic to Cloud SQL.
+
 
 ## Repository Structure
-
-Adapt this section to your actual files, but a typical structure looks like:
 
 ```text
 .
 ├── main.tf         # Provider config and core Cloud SQL resources
 ├── variables.tf    # Input variables such as project, region, db version
 ├── outputs.tf      # Connection name, instance IP, and other outputs
-├── cloudsql_proxy/ # Helper scripts or binary placement for the proxy
 └── README.md       # Project documentation
 ````
 
@@ -65,7 +62,7 @@ You will need:
 * Permission to create Cloud SQL instances and related IAM roles
 * Terraform installed locally or use Cloud Shell where Terraform is already available
 * Google Cloud SDK if working from your own machine
-* Basic familiarity with SQL and the MySQL or PostgreSQL client
+* Basic familiarity with SQL and the MySQL client
 
 
 ## Deploy with Terraform
@@ -99,13 +96,6 @@ You will need:
    ```bash
    terraform output
    ```
-
-   Look for values such as:
-
-   * `instance_connection_name`
-   * `db_public_ip`
-   * `db_name`
-   * `db_user`
 
 ## Connect with Cloud SQL Auth Proxy
 

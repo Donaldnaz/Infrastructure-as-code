@@ -1,6 +1,154 @@
-# Infrastructure-as-code
-This repository contains multiple Infrastructure as Code (IaC) projects built using Terraform to automate and manage AWS cloud resources. Each project demonstrates different aspects of cloud provisioning, networking, and automation — reflecting real-world DevOps and Cloud Engineering use cases.
+# Cloud SQL with Terraform
 
+This repository contains Terraform configuration and helper scripts.
 
-- **Terraform – Infrastructure as Code** → [`terraform`](https://github.com/Donaldnaz/Cloud-Devops-Projects/tree/terraform-project)  
-  Automated provisioning of cloud resources using Terraform modules and IaC best practices.
+---
+
+## Overview
+
+The project demonstrates how to:
+
+* Define Cloud SQL infrastructure using Terraform
+* Provision Cloud SQL instances for MySQL and optionally PostgreSQL
+* Install and run the Cloud SQL Auth Proxy from Cloud Shell
+* Connect to the database securely using standard command line clients
+* Manage database users and simple test schemas
+
+---
+
+## Objectives
+
+According to the official lab description, you practice the following tasks: :contentReference[oaicite:2]{index=2}  
+
+* Create a Cloud SQL instance with Terraform
+* Install the Cloud SQL Auth Proxy in Cloud Shell
+* Test connectivity with a MySQL client
+  
+---
+
+## Architecture
+
+At a high level, the configuration provisions:
+
+<img width="600" height="278" alt="image" src="https://github.com/user-attachments/assets/31ba7bfc-9393-4e08-9692-8ab0a5fc72f1" />
+
+* Cloud SQL instance
+* A **database** inside each instance for application data
+* A **database user** with a password stored in Terraform variables
+* **network settings** such as private IP or authorized networks
+* Outputs that expose:
+  * Instance connection name
+  * Public IP address when enabled
+  * Default database and user names
+
+Connectivity pattern:
+
+1. Terraform creates the Cloud SQL instance and database.
+2. You start the Cloud SQL Auth Proxy in Cloud Shell, using the instance connection name.
+3. The proxy opens a local TCP port.
+4. The MySQL or PostgreSQL client connects to that local port, and the proxy securely forwards traffic to Cloud SQL.
+   
+---
+
+## Repository Structure
+
+Adapt this section to your actual files, but a typical structure looks like:
+
+```text
+.
+├── main.tf         # Provider config and core Cloud SQL resources
+├── variables.tf    # Input variables such as project, region, db version
+├── outputs.tf      # Connection name, instance IP, and other outputs
+├── cloudsql_proxy/ # Helper scripts or binary placement for the proxy
+└── README.md       # Project documentation
+````
+
+---
+
+## Prerequisites
+
+You will need:
+
+* A Google Cloud project with billing enabled
+* Permission to create Cloud SQL instances and related IAM roles
+* Terraform installed locally or use Cloud Shell where Terraform is already available
+* Google Cloud SDK if working from your own machine
+* Basic familiarity with SQL and the MySQL or PostgreSQL client
+
+---
+
+## Deploy with Terraform
+
+1. **Initialize Terraform**
+
+   ```bash
+   terraform init
+   ```
+
+2. **Review the plan**
+
+   ```bash
+   terraform plan
+   ```
+
+3. **Apply the configuration**
+
+   ```bash
+   terraform apply
+   ```
+
+   Terraform will:
+
+   * Create the Cloud SQL instance
+   * Create the database and user
+   * Output connection details
+
+4. **Inspect outputs**
+
+   ```bash
+   terraform output
+   ```
+
+   Look for values such as:
+
+   * `instance_connection_name`
+   * `db_public_ip`
+   * `db_name`
+   * `db_user`
+
+---
+
+## Connect with Cloud SQL Auth Proxy
+
+1. **Download or use the preinstalled proxy**
+
+   In Cloud Shell, you can often use:
+
+   ```bash
+   wget https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.11.4/cloud-sql-proxy.linux.amd64 -O cloud-sql-proxy
+   chmod +x cloud-sql-proxy
+   ```
+
+2. **Start the proxy**
+
+   Replace the connection name with your output:
+
+   ```bash
+   ./cloud-sql-proxy $INSTANCE_CONNECTION_NAME \
+     --port=3306
+   ```
+
+3. **Connect with MySQL client**
+
+   ```bash
+   mysql -h 127.0.0.1 -P 3306 -udefault -p
+   ```
+
+   Enter the password you set in Terraform. Once connected, you can run simple SQL commands:
+
+   ```sql
+   SHOW DATABASES;
+   ```
+
+## Author
+# Anasieze Ikenna - Cloud Engineer

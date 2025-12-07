@@ -24,7 +24,7 @@ The project demonstrates how to:
 
 At a high level, the configuration provisions:
 
-<img width="1200" height="371" alt="Screenshot 2025-12-07 at 6 47 57 PM" src="https://github.com/user-attachments/assets/7446ccdc-6577-40e5-8bf5-7d2ad8599f9a" />
+<img width="1200" height="550" alt="Screenshot 2025-12-07 at 6 47 57 PM" src="https://github.com/user-attachments/assets/7446ccdc-6577-40e5-8bf5-7d2ad8599f9a" />
 
 
 * Cloud SQL instance

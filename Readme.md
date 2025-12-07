@@ -72,7 +72,7 @@ Traffic flow:
    ```bash
    terraform apply tfplan
    ```
-<img width="14" height="729" alt="Screenshot 2025-12-07 at 1 22 24 PM" src="https://github.com/user-attachments/assets/38915d2d-d69d-427b-a27a-691d5e513ffd" />
+<img width="1200" height="729" alt="Screenshot 2025-12-07 at 1 22 24 PM" src="https://github.com/user-attachments/assets/38915d2d-d69d-427b-a27a-691d5e513ffd" />
 
 4. **Verify the deployment**
 
@@ -80,7 +80,7 @@ Traffic flow:
    terraform show
    ```
 
-<img width="1440" height="641" alt="Screenshot 2025-12-07 at 1 30 50 PM" src="https://github.com/user-attachments/assets/542c8ebe-702a-48d5-91dd-61ade4969f62" />
+<img width="1200" height="641" alt="Screenshot 2025-12-07 at 1 30 50 PM" src="https://github.com/user-attachments/assets/542c8ebe-702a-48d5-91dd-61ade4969f62" />
 
 ---
 

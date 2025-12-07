@@ -1,6 +1,6 @@
 # Cloud SQL with Terraform
 
-This repository contains Terraform configuration to provision **Cloud SQL**
+This repository contains Terraform configuration to provision **Cloud SQL** instance
 
 ## Overview
 

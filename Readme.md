@@ -15,8 +15,6 @@ The project demonstrates how to:
 
 ## Objectives
 
-According to the official lab description, you practice the following tasks: :contentReference[oaicite:2]{index=2}  
-
 * Create a Cloud SQL instance with Terraform
 * Install the Cloud SQL Auth Proxy in Cloud Shell
 * Test connectivity with a MySQL client

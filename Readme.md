@@ -2,8 +2,6 @@
 
 This repository contains Terraform configuration and helper scripts.
 
----
-
 ## Overview
 
 The project demonstrates how to:
@@ -14,7 +12,6 @@ The project demonstrates how to:
 * Connect to the database securely using standard command line clients
 * Manage database users and simple test schemas
 
----
 
 ## Objectives
 

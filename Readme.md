@@ -30,7 +30,8 @@ According to the official lab description, you practice the following tasks: :co
 
 At a high level, the configuration provisions:
 
-<img width="600" height="278" alt="image" src="https://github.com/user-attachments/assets/31ba7bfc-9393-4e08-9692-8ab0a5fc72f1" />
+<img width="600" height="278" alt="image" src="https://github.com/user-attachments/assets/d8f95623-2dea-472e-9ce2-6ab6303e7e56" />
+
 
 * Cloud SQL instance
 * A **database** inside each instance for application data

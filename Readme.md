@@ -55,24 +55,13 @@ robot-lab-cloudformation/
 4. Specify stack name and parameters (if any)
 5. Click **Next** through options and **Create Stack**
 
-### Option 2: AWS CLI
-
-```bash
-aws cloudformation create-stack \
-  --stack-name robot-lab \
-  --template-body file://templates/robot-lab-stack.yaml \
-  --capabilities CAPABILITY_IAM
-````
-
 ### Delete Stack
 
 ```bash
 aws cloudformation delete-stack --stack-name robot-lab
 ```
 
-## Example Screenshots
-
-You can add screenshots of:
+## Screenshots
 
 * Deployed EC2 instance
 * Created S3 bucket
@@ -84,8 +73,5 @@ You can add screenshots of:
 * CloudFormation YAML syntax, intrinsic functions, and stack dependencies
 * Debugging stack creation issues using CloudFormation Events
 * Designing reusable templates for future projects
-
-## Project Status
-** Completed & Deployed**
 
 ## Anasieze Ikenna - Cloud Engineer

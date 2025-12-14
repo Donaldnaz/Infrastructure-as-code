@@ -27,10 +27,10 @@ The project emphasizes best practices in Infrastructure-as-Code (IaC), making en
 
 ```
 robot-setup/
-├── Setup.pdf                       # Guideline
-├── stack_one.yaml                        # CloudFormation template
-├── stack_two.yaml                        # CloudFormation template
-├── README.md
+├── Setup.pdf                             # Guideline
+├── stack_one.yaml                        # CloudFormation Test template
+├── stack_two.yaml                        # CloudFormation Prod template
+├── README.md                             # This File
 
 ````
 

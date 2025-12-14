@@ -1,5 +1,13 @@
 # STACK TWO
 
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Multi-region safe EC2 + Security Group + S3 stack
+
+Parameters:
+  DefaultVPC:
+    Type: AWS::EC2::VPC::Id
+    Description: Select the default VPC for the region
+
 Resources:
 
   RobotAppSecurityGroup:
@@ -20,10 +28,14 @@ Resources:
   RobotAppServer:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t2.large
-      ImageId: ami-087c17d1fe0178315
+      InstanceType: t2.small
+      ImageId: 
+        !Sub "{{resolve:ssm:/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2}}"
       SecurityGroupIds:
         - !Ref RobotAppSecurityGroup
+      Tags:
+        - Key: Project
+          Value: RobotApp
 
   RobotS3Bucket:
     Type: AWS::S3::Bucket

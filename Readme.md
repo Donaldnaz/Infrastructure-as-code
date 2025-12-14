@@ -26,13 +26,8 @@ The project emphasizes best practices in Infrastructure-as-Code (IaC), making en
 ## Project Structure
 
 ```
-robot-lab-cloudformation/
-├── templates/
-│   ├── robot-lab-stack.yaml        # Main CloudFormation YAML template
-│   └── parameters.json             # Optional parameter overrides for stack inputs
-├── deployment/
-│   └── deploy.sh                   # Script to deploy the stack via AWS CLI
-├── screenshots/                    # Optional UI screenshots of AWS resources
+robot-setup/
+├── app.yaml                        # CloudFormation YAML template
 ├── README.md
 
 ````

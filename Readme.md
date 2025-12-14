@@ -1,4 +1,4 @@
-# Robot Lab Infrastructure Automation with AWS CloudFormation
+# Robot Research Infrastructure Automation with AWS CloudFormation
 
 >  Infrastructure-as-Code (IaC) project to automate a standardized AWS environment for robotics research deployments using AWS CloudFormation.
 

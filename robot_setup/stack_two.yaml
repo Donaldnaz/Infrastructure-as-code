@@ -28,7 +28,7 @@ Resources:
   RobotAppServer:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: t2.small
+      InstanceType: c3.large
       ImageId: 
         !Sub "{{resolve:ssm:/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2}}"
       SecurityGroupIds:

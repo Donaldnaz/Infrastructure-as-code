@@ -27,17 +27,19 @@ The project emphasizes best practices in Infrastructure-as-Code (IaC), making en
 
 ```
 robot-setup/
-├── app.yaml                        # CloudFormation YAML template
+├── Setup.pdf                       # Guideline
+├── stack_one.yaml                        # CloudFormation template
+├── stack_two.yaml                        # CloudFormation template
 ├── README.md
 
 ````
 
 ## Features
 
-- Launches EC2 instance with security group and key pair configuration
+- Launches EC2 instance with security groupconfiguration
 - Creates S3 bucket for experiment data, model artifacts, or logs
-- Reusable and parameterized for different environments (Dev, Test, Prod)
-- Uses IAM best practices for least-privilege policies (where applicable)
+- Reusable and parameterized for different environments (Test, Prod)
+- Uses IAM best practices for least-privilege policies
 - Follows declarative IaC methodology for full reproducibility
 
 ## How to Deploy
@@ -46,14 +48,13 @@ robot-setup/
 
 1. Open the AWS Management Console
 2. Navigate to **CloudFormation > Create Stack**
-3. Upload `robot-lab-stack.yaml`
-4. Specify stack name and parameters (if any)
-5. Click **Next** through options and **Create Stack**
+3. Upload `stack_one.yaml or stack_two.yaml`
+. Click **Next** through options and **Create Stack**
 
 ### Delete Stack
 
 ```bash
-aws cloudformation delete-stack --stack-name robot-lab
+aws cloudformation delete-stack --stack-name RobotApp
 ```
 
 ## Screenshots

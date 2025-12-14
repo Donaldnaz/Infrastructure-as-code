@@ -1,5 +1,91 @@
-# Infrastructure-as-code
+# Robot Lab Infrastructure Automation with AWS CloudFormation
 
-This repository contains multiple Infrastructure as Code (IaC) projects built using Terraform & CloudFormation to automate and manage cloud resources. Each project demonstrates different aspects of cloud provisioning, networking, and automation — reflecting real-world DevOps and Cloud Engineering use cases.
+>  Infrastructure-as-Code (IaC) project to automate a standardized AWS environment for robotics research deployments using AWS CloudFormation.
 
-Automated provisioning of cloud resources using Terraform & CloudFormation and IaC best practices.
+## Project Description
+
+This project simulates a real-world scenario where a robotics research team, seeks to standardize and automate their cloud infrastructure to minimize human error and accelerate deployment workflows.
+
+Using **AWS CloudFormation**, I designed and deployed a repeatable infrastructure stack that provisions the necessary AWS services — including **Amazon EC2** and **Amazon S3** — fully automated through YAML templates.
+
+The project emphasizes best practices in Infrastructure-as-Code (IaC), making environments easily reproducible, version-controlled, and scalable across different stages (Dev, Test, Prod).
+
+## Key Objectives
+
+- Automate AWS infrastructure using CloudFormation
+- Define reusable infrastructure using YAML
+- Minimize manual provisioning and human error
+- Implement real-world robotics deployment use case
+
+## AWS Services Used
+
+- **AWS CloudFormation** – for defining and provisioning infrastructure as code  
+- **Amazon EC2** – to run robotics research workloads  
+- **Amazon S3** – for storing input/output artifacts or models  
+
+## Project Structure
+
+```
+robot-lab-cloudformation/
+├── templates/
+│   ├── robot-lab-stack.yaml        # Main CloudFormation YAML template
+│   └── parameters.json             # Optional parameter overrides for stack inputs
+├── deployment/
+│   └── deploy.sh                   # Script to deploy the stack via AWS CLI
+├── screenshots/                    # Optional UI screenshots of AWS resources
+├── README.md
+
+````
+
+## Features
+
+- Launches EC2 instance with security group and key pair configuration
+- Creates S3 bucket for experiment data, model artifacts, or logs
+- Reusable and parameterized for different environments (Dev, Test, Prod)
+- Uses IAM best practices for least-privilege policies (where applicable)
+- Follows declarative IaC methodology for full reproducibility
+
+## How to Deploy
+
+### Option 1: AWS Console
+
+1. Open the AWS Management Console
+2. Navigate to **CloudFormation > Create Stack**
+3. Upload `robot-lab-stack.yaml`
+4. Specify stack name and parameters (if any)
+5. Click **Next** through options and **Create Stack**
+
+### Option 2: AWS CLI
+
+```bash
+aws cloudformation create-stack \
+  --stack-name robot-lab \
+  --template-body file://templates/robot-lab-stack.yaml \
+  --capabilities CAPABILITY_IAM
+````
+
+### Delete Stack
+
+```bash
+aws cloudformation delete-stack --stack-name robot-lab
+```
+
+## Example Screenshots
+
+You can add screenshots of:
+
+* Deployed EC2 instance
+* Created S3 bucket
+* CloudFormation Stack events
+
+## What I Learned
+
+* The power of **infrastructure-as-code** to scale cloud deployments
+* CloudFormation YAML syntax, intrinsic functions, and stack dependencies
+* Debugging stack creation issues using CloudFormation Events
+* Designing reusable templates for future projects
+
+## Project Status
+** Completed & Deployed**
+
+## Anasieze Ikenna - Cloud Engineer

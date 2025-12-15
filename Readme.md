@@ -50,6 +50,7 @@ At a high level the architecture looks like this:
 
 ```text
 .
+code/
 ├── main.tf          # GCP resources such as the GKE cluster
 ├── k8s.tf           # Kubernetes resources such as Deployment and Service
 ├── output.tf        # Infrastructure Output details

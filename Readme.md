@@ -27,16 +27,16 @@ The project emphasizes best practices in Infrastructure-as-Code (IaC), making en
 
 ```
 robot-setup/
-├── Setup.pdf                             # Guideline
-├── stack_one.yaml                        # CloudFormation Test template
-├── stack_two.yaml                        # CloudFormation Prod template
+├── setup.pdf                             # Setup to Deploy Stack
+├── stack_one.yaml                        # CloudFormation template (Test)
+├── stack_two.yaml                        # CloudFormation Prod (Prod)
 ├── README.md                             # This File
 
 ````
 
 ## Features
 
-- Launches EC2 instance with security groupconfiguration
+- Launches EC2 instance with security group configuration
 - Creates S3 bucket for experiment data, model artifacts, or logs
 - Reusable and parameterized for different environments (Test, Prod)
 - Uses IAM best practices for least-privilege policies

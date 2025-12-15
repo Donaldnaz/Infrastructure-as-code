@@ -27,6 +27,7 @@ The project emphasizes best practices in Infrastructure-as-Code (IaC), making en
 
 ```
 robot-setup/
+├── Architecture.png                      # Infrastructure Diagram 
 ├── setup.pdf                             # Setup to Deploy Stack
 ├── stack_one.yaml                        # CloudFormation template (Test)
 ├── stack_two.yaml                        # CloudFormation Prod (Prod)

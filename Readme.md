@@ -8,7 +8,7 @@ This project simulates a real-world scenario where a robotics research team, see
 
 Using **AWS CloudFormation**, I designed and deployed a repeatable infrastructure stack that provisions the necessary AWS services — including **Amazon EC2** and **Amazon S3** — fully automated through YAML templates.
 
-The project emphasizes best practices in Infrastructure-as-Code (IaC), making environments easily reproducible, version-controlled, and scalable across different stages (Dev, Test, Prod).
+The project emphasizes best practices in Infrastructure-as-Code (IaC), making environments easily reproducible, version-controlled, and scalable across different stages (Test, Prod).
 
 ## Key Objectives
 

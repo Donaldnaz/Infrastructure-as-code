@@ -18,7 +18,7 @@ Using Terraform, this project:
 
 At a high level, the Terraform code provisions:
 
-<img width="1400" height="739" alt="image" src="https://github.com/user-attachments/assets/131cbbb8-dd83-43de-8cb5-2a080f0cad9a" />
+<img width="4315" height="2635" alt="image" src="https://github.com/user-attachments/assets/76688e30-7d87-4675-b017-b041a40b536b" />
 
 
 
